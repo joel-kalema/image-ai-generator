@@ -48,8 +48,8 @@ export const Collection = ({
 
   return (
     <>
-      <div className="collection-heading">
-        <h2 className="h2-bold text-dark-600">Recent Edits</h2>
+      <div className="collection-heading md:mb-20 border-b-[2px] pb-10 border-[#565656]">
+        <h2 className="h3-bold text-[#fff]">Recent Edits</h2>
         {hasSearch && <Search />}
       </div>
 

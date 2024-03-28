@@ -80,7 +80,7 @@
 }
 
 .root {
-  @apply flex min-h-screen w-full flex-col bg-white lg:flex-row;
+  @apply flex min-h-screen w-full flex-col bg-[#161616] lg:flex-row;
 }
 
 .root-container {
@@ -120,7 +120,7 @@
 
   /* 30 */
   .h3-bold {
-    @apply font-bold text-[30px] leading-[140%];
+    @apply font-bold text-[25px] leading-[140%];
   }
 
   /* 24 */
@@ -179,11 +179,11 @@
   }
 
   .input-field {
-    @apply rounded-[16px] border-2 border-purple-200/20 shadow-sm shadow-purple-200/15 text-dark-600 disabled:opacity-100 p-16-semibold h-[50px] md:h-[54px] focus-visible:ring-offset-0 px-4 py-3 focus-visible:ring-transparent !important;
+    @apply rounded-[16px] border-2 border-purple-200/20 shadow-sm shadow-purple-200/15 text-[#fff] disabled:opacity-100 p-16-semibold h-[45px] md:h-[49px] focus-visible:ring-offset-0 px-4 py-3 focus-visible:ring-transparent !important;
   }
 
   .search-field {
-    @apply border-0 bg-transparent text-dark-600 w-full placeholder:text-dark-400 h-[50px] p-16-medium focus-visible:ring-offset-0 p-3 focus-visible:ring-transparent !important;
+    @apply border-0 bg-transparent text-[#fff] w-full placeholder:text-[#fff] h-[50px] p-16-medium focus-visible:ring-offset-0 p-2 focus-visible:ring-transparent !important;
   }
 
   .submit-button {
@@ -220,7 +220,8 @@
 
   /* Home Page */
   .home {
-    @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-banner bg-cover bg-no-repeat p-10 shadow-inner;
+    @apply sm:flex-center hidden h-80 flex-col gap-4 bg-cover bg-no-repeat p-10;
+    background-image: linear-gradient(to right, rgba(27, 27, 27, 0.853), rgba(0, 0, 0, 0)),url("/home.png");
   }
 
   .home-heading {
@@ -307,12 +308,12 @@
 
   /* Search Component */
   .search {
-    @apply flex w-full rounded-[16px] border-2 border-purple-200/20 bg-white px-4 shadow-sm shadow-purple-200/15 md:max-w-96;
+    @apply flex w-full border-2 border-purple-200/20 bg-white/60 rounded-[16px] px-4 shadow-sm shadow-purple-200/15 md:max-w-96;
   }
 
   /* Sidebar Component */
   .sidebar {
-    @apply hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex;
+    @apply hidden h-screen w-72 bg-white/90 backdrop-blur-xl p-5 shadow-md shadow-purple-200/50 lg:flex;
   }
 
   .sidebar-logo {
@@ -328,11 +329,11 @@
   }
 
   .sidebar-nav_element {
-    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-purple-100 hover:shadow-inner;
+    @apply flex-center w-full whitespace-nowrap bg-cover  transition-all hover:bg-white/70;
   }
 
   .sidebar-link {
-    @apply p-16-semibold flex size-full gap-4 p-4;
+    @apply flex size-full gap-4 p-3;
   }
 
   /* TransformationForm Component */

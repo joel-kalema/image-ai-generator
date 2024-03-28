@@ -12,9 +12,9 @@ const Home = async ({ searchParams }: SearchParamProps) => {
 
   return (
     <>
-      <section className="home">
+      <section className="home mb-10">
         <h1 className="home-heading">
-          Unleash Your Creative Vision with Imaginify
+          A better way to turn your imagination into art is withImaginifyAI
         </h1>
         <ul className="flex-center w-full gap-20">
           {navLinks.slice(1, 5).map((link) => (
@@ -32,7 +32,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
         </ul>
       </section>
 
-      <section className="sm:mt-12">
+      <section className="sm:mt-20">
         <Collection 
           hasSearch={true}
           images={images?.data}
