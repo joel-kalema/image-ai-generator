@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="./public/homegit.png" alt="Project Banner">
+  <img src="homegit.png" alt="Project Banner">
   <br />
 
   <div>
