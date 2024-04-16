@@ -1,8 +1,5 @@
+![imagai](https://github.com/joel-kalema/image-ai-generater/assets/57408419/ddeee7b3-c747-4d73-bd6e-77320eb23ec9)
 <div align="center">
-  <br />
-  <img src="/imagai.png" alt="Project Banner">
-  <br />
-
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
