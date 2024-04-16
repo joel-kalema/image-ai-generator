@@ -9,14 +9,16 @@ import { usePathname } from 'next/navigation'
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { navLinks } from '@/constants';
 import { Button } from '../ui/button';
+import { GiKnockedOutStars } from "react-icons/gi";
 
 const Sidebar = () => {
     const pathname = usePathname();
     return (
         <aside className="sidebar">
             <div className="flex size-full flex-col gap-4">
-                <Link href="/" className="sidebar-logo">
-                    <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+                <Link href="/" className="flex items-center">
+                <GiKnockedOutStars className='text-5xl'/>
+                <p className='font-extrabold ml-2 text-2xl'>IMAGE <span className='text'>AI</span></p>
                 </Link>
 
                 <nav className="sidebar-nav">
@@ -26,7 +28,7 @@ const Sidebar = () => {
                                 const isActive = link.route === pathname
 
                                 return (
-                                    <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                                    <li key={link.route} className={`sidebar-nav_element group ${isActive ? ' bg-[#000] text-white' : 'text-gray-700'
                                         }`}>
                                         <Link className="sidebar-link" href={link.route}>
                                             <Image
@@ -48,7 +50,7 @@ const Sidebar = () => {
                                 const isActive = link.route === pathname
 
                                 return (
-                                    <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                                    <li key={link.route} className={`sidebar-nav_element group hover:text-[#000] ${isActive ? 'bg-[#000] text-white' : 'text-gray-700'
                                         }`}>
                                         <Link className="sidebar-link" href={link.route}>
                                             <Image

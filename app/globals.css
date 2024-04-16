@@ -329,7 +329,7 @@
   }
 
   .sidebar-nav_element {
-    @apply flex-center w-full whitespace-nowrap bg-cover  transition-all hover:bg-white/70;
+    @apply flex-center w-full whitespace-nowrap bg-cover  transition-all hover:bg-white/70 hover:text-[#000];
   }
 
   .sidebar-link {
