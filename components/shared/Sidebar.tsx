@@ -18,7 +18,7 @@ const Sidebar = () => {
             <div className="flex size-full flex-col gap-4">
                 <Link href="/" className="flex items-center">
                 <GiKnockedOutStars className='text-5xl'/>
-                <p className='font-extrabold ml-2 text-2xl'>IMAGE <span className='text'>AI</span></p>
+                <p className='font-extrabold ml-2 text-2xl'>IMAGE <span className='text-purple-500'>AI</span></p>
                 </Link>
 
                 <nav className="sidebar-nav">
@@ -50,7 +50,7 @@ const Sidebar = () => {
                                 const isActive = link.route === pathname
 
                                 return (
-                                    <li key={link.route} className={`sidebar-nav_element group hover:text-[#000] ${isActive ? 'bg-[#000] text-white' : 'text-gray-700'
+                                    <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-[#000] text-white' : 'text-gray-700'
                                         }`}>
                                         <Link className="sidebar-link" href={link.route}>
                                             <Image
