@@ -87,7 +87,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/joel-kalema/image-ai-generater.git
-cd imaginify
+cd image-ai-generator
 ```
 
 **Installation**
